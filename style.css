@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+    --primary-color: hsl(172, 67%, 45%);
+
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grey-cyan: hsl(186, 14%, 43%);
+    --grey-cyan: hsl(184, 14%, 56%);
+    --light-grey-cyan: hsl(185, 41%, 84%);
+    --very-light-grey-cyan: hsl(189, 41%, 97%);
+    --hover-cyan: hsl(173, 61%, 77%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--light-grey-cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    position: absolute;
+    top: 50px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 50px;
+    font-size: 15px;
+}
+
+.attribution * {
+    font-size: 15px;
+}
+
+.container {
+    background-color: var(--white);
+    border-radius: 25px;
+    display: flex;
+    padding: 30px;    
+    width: 60%;
+    height: 425px;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.form label {
+    color: var(--dark-grey-cyan);
+    font-size: 15px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper img {
+    position: absolute;
+    margin: 0px 10px;
+}
+
+.input-wrapper input {
+    background-color: var(--very-light-grey-cyan);
+    width: 100%;
+    text-align: right;
+    border: none;
+    color: var(--very-dark-cyan);
+    padding: 0px 20px;
+    outline: none;
+    border: solid 3px transparent;
+    transition: all 0.1s linear;
+}
+
+.input-wrapper input:focus {
+    border: solid 3px var(--hover-cyan);
+    border-radius: 5px;
+}
+
+.percentage {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.percentage button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.percentage button.active {
+    background-color: var(--primary-color);
+    color: var(--very-dark-cyan);
+}
+
+.percentage button:hover {
+    color: var(--very-dark-cyan);
+    background-color: var(--hover-cyan);
+}
+
+.percentage input {
+    outline: none;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: var(--very-light-grey-cyan);
+    border: none;
+    color: var(--very-dark-cyan);
+    border: solid 3px transparent;
+    text-align: right;
+    padding: 2px 0px;
+    padding-right: 15px;
+}
+
+.percentage input:focus {
+    border: solid 3px var(--hover-cyan);
+    border-radius: 5px;
+}
+
+.box {
+    margin-left: 20px;
+    border-radius: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: var(--very-dark-cyan);
+}
+
+.box .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info h1 {
+    font-size: 18px;
+    color: var(--light-grey-cyan);
+}
+
+.info h2 {
+    font-size: 15px;
+    color: var(--grey-cyan);
+}
+
+.result span {
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.box button {
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    color: var(--very-dark-cyan);
+    background-color: hsl(183, 80%, 24%);
+}
